@@ -122,7 +122,7 @@ function blox_load_sandbox_addon() {
 			add_filter( 'blox_registered_settings', array( $this, 'add_sandbox_settings' ) );
 			
 			// Let Blox know the addon is active
-			add_filter( 'blox_active_addons', array( $this, 'notify_of_active_addon' ), 10 );
+			add_filter( 'blox_get_active_addons', array( $this, 'notify_of_active_addon' ), 10 );
 		}
 		
 
@@ -267,7 +267,7 @@ function blox_load_sandbox_addon() {
 		 */
 		public function notify_of_active_addon( $addons ) {
 
-			$addons['blox-sandbox'] = __( 'Blox Sandbox Addon', 'blox-sandbox' );
+			$addons['sandbox_addon'] = __( 'Blox Sandbox Addon', 'blox-sandbox' );
 			return $addons;
 		}
 
