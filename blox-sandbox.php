@@ -267,7 +267,7 @@ function blox_load_sandbox_addon() {
 		 */
 		public function notify_of_active_addon( $addons ) {
 
-			$addons['sandbox_addon'] = __( 'Blox Sandbox Addon', 'blox-sandbox' );
+			$addons['sandbox_addon'] = __( 'Sandbox Addon', 'blox-sandbox' );
 			return $addons;
 		}
 
