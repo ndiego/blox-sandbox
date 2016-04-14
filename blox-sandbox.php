@@ -69,7 +69,7 @@ function blox_load_sandbox_addon() {
 		 *
 		 * @var string
 		 */
-		public $version = '1.0.0';
+		public $version = '0.9.0';
 
 		/**
 		 * The name of the plugin.
@@ -78,7 +78,7 @@ function blox_load_sandbox_addon() {
 		 *
 		 * @var string
 		 */
-		public $plugin_name = 'Blox - Sandbox Addon';
+		public $plugin_name = 'Sandbox Addon';
 		
 		/**
 		 * Unique plugin slug identifier.
@@ -180,7 +180,7 @@ function blox_load_sandbox_addon() {
 			
 			// Setup the license
 			if ( class_exists( 'Blox_License' ) ) {
-				$blox_sandbox_addon_license = new Blox_License( __FILE__, 'Sandbox Addon', '1.0.0', 'Nicholas Diego', 'blox_sandbox_addon_license_key', 'https://www.bloxwp.com', 'addons' );
+				$blox_sandbox_addon_license = new Blox_License( __FILE__, $this->plugin_name, $this->version, 'Nicholas Diego', 'blox_sandbox_addon_license_key', 'https://www.bloxwp.com', 'addons' );
 			}
 		}
 		
