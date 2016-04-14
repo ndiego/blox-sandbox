@@ -1,11 +1,11 @@
 <?php
 /**
  * Plugin Name: Blox - Sandbox Addon
- * Plugin URI:  https://www.bloxwp.com
+ * Plugin URI:  https://www.bloxwp.com/addons/sandbox
  * Description: Enables the Sandbox Addon for Blox
  * Author:      Nick Diego
  * Author URI:  http://www.outermostdesign.com
- * Version:     1.0.0
+ * Version:     0.9.0
  * Text Domain: blox-sandbox
  * Domain Path: languages
  *
@@ -250,7 +250,7 @@ function blox_load_sandbox_addon() {
 					'id'    	  => 'sandbox_enable_admin',
 					'name'  	  => __( 'Run on Admin', 'blox' ),
 					'label' 	  => __( 'Run custom PHP on the frontend and admin', 'blox-sandbox' ),
-					'desc'  	  => sprintf( __( 'With this option unchecked, Sandbox custom PHP is only run on the frontend. So if you break something, you can always head back to this page and make the necessary changes. However, there are many functions you may want to run that need access to the admin, such as adding/removing Genesis layout configurations, widget areas, etc. These functions will not work correctly unless this box is checked. But if you check, your custom PHP code is run at all times, meaning that if you don\'t know what you doing, you can easily break both the frontend and backend of your site. %1$sYou have been warned%2$s.', 'blox-sandbox' ), '<strong>', '</strong>' ),
+					'desc'  	  => sprintf( __( 'With this option unchecked, Sandbox custom PHP is only run on the frontend. So if you break something, you can always head back to this page and make the necessary changes. However, there are many functions you may want to run that need access to the admin, such as adding/removing Genesis layout configurations, widget areas, etc. These functions will not work correctly unless this box is checked. But if you enable, your custom PHP code is run at all times. This means that if you don\'t know what you doing, you can easily break both the frontend and backend of your site. %1$sYou have been warned%2$s.', 'blox-sandbox' ), '<strong>', '</strong>' ),
 					'type'  	  => 'checkbox',
 					'default'	  => '',
 				)
